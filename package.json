@@ -1,0 +1,27 @@
+{
+  "name": "pocket-api-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k-msy/pocket-api-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k-msy/pocket-api-server/issues"
+  },
+  "homepage": "https://github.com/k-msy/pocket-api-server#readme",
+  "dependencies": {
+    "axios": "0.18.0",
+    "connect-history-api-fallback": "1.5.0",
+    "cookie-parser": "1.4.3",
+    "express": "4.16.3",
+    "express-session": "1.15.6"
+  }
+}
