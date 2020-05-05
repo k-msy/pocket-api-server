@@ -4,6 +4,7 @@ express = require('express')
 // history = require('connect-history-api-fallback')
 cookieParser = require('cookie-parser')
 session = require('express-session')
+var route = require('./routes/index')
 // pocket_ctl = require('./src/controller/pocket-controller.js')
 
 let app = express()
@@ -28,10 +29,8 @@ app.use(session({
     maxAge: 60 * 60 * 1000
   }
 }))
-
-// routing
-// app.get('/auth/pocket/request_token', pocket_ctl.request_token)
-// app.get('/auth/pocket/access_token', pocket_ctl.access_token)
-// app.get('/pocket/retrieve', pocket_ctl.retrieve)
+app.use(route)
 
 console.log('server listening...')
+
+module.exports = app;
